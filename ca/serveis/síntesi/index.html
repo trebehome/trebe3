@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ca"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Síntesi de veu | Trebe</title>
+    <meta name="description" content="">
+    
+    <base href="https://trebehome.github.io/trebe3/ca/">
+    
+    <link rel="alternate" hreflang="es" href="https://trebehome.github.io/trebe3/es/servicios/s%C3%ADntesis/">
+    
+    <link rel="alternate" hreflang="eu" href="https://trebehome.github.io/trebe3/eu/zerbitzuak/sintesia/">
+    
+    <link rel="alternate" hreflang="en" href="https://trebehome.github.io/trebe3/en/services/synthesis/">
+    
+    <link rel="alternate" hreflang="ca" href="https://trebehome.github.io/trebe3/ca/serveis/s%C3%ADntesi/">
+    
+    <link rel="alternate" hreflang="gl" href="https://trebehome.github.io/trebe3/gl/servizos/s%C3%ADntese/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://trebehome.github.io/trebe3/ca/serveis/s%C3%ADntesi/">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest" crossorigin="anonymous">
+    <meta name="theme-color" content="#031f46">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://trebehome.github.io/trebe3/css/styles.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/trebe_icon.png">
+
+</head><body><nav class="navbar navbar-expand-lg bg-white position-sticky py-lg-2 py-1">
+    <div class="container-fluid">
+        
+        <a href="https://trebehome.github.io/trebe3/ca/" class="navbar-brand ms-lg-4 ms-2 me-lg-5">
+            <img loading="lazy" src="../img/trebe_logo.svg" width="140" height="63" class="img-fluid" alt="Logo">
+        </a>
+        <button class="navbar-toggler me-3" id="menu-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu-options" aria-controls="menu-options" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <div class="position-relative m-0" id="menu-icon">
+                <span class="d-block position-absolute bg-dark opacity-100"></span>
+                <span class="d-block position-absolute bg-dark opacity-100"></span>
+                <span class="d-block position-absolute bg-dark opacity-100"></span>
+                <span class="d-block position-absolute bg-dark opacity-100"></span>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-options">
+            <ul class="navbar-nav ms-auto me-lg-4 text-center align-items-lg-center align-items-start">
+                <li class="nav-item px-lg-2 px-4">
+                    <div class="dropdown text-start">
+                        
+                        <a class="nav-link pe-0 text-decoration-none d-inline-block" id="services"
+                            href="https://trebehome.github.io/trebe3/ca/serveis/">
+                            
+                            Serveis
+                        </a>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split ps-1 border-0" id="menu"
+                            data-bs-toggle="dropdown" aria-label="Services" aria-expanded="false">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end mb-lg-0 mb-2 ps-2 pe-4">
+                            
+                            <li>
+                                <a class="dropdown-item my-2" href="https://trebehome.github.io/trebe3/ca/serveis/traducci%C3%B3/">
+                                    
+                                    Traducció
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a class="dropdown-item my-2" href="https://trebehome.github.io/trebe3/ca/serveis/transcripci%C3%B3/">
+                                    
+                                    Transcripció
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a class="dropdown-item my-2" href="https://trebehome.github.io/trebe3/ca/serveis/s%C3%ADntesi/">
+                                    
+                                    Síntesi de veu
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item px-lg-2 px-4">
+                    <a class="nav-link text-decoration-none d-inline-block" href="https://trebehome.github.io/demo3/ca">
+                        
+                        Demos
+                    </a>
+                </li>
+                <li class="nav-item px-lg-2 px-4">
+                    
+                    <a class="nav-link text-decoration-none d-inline-block" href="https://trebehome.github.io/trebe3/ca/contacte/">
+                        
+                        Contacte
+                    </a>
+                </li>
+                <li class="nav-item px-lg-2 px-4 mb-lg-0 mb-3">
+                    
+                    <a class="nav-link text-decoration-none d-inline-block" href="https://trebehome.github.io/trebe3/ca/not%C3%ADcies/">
+                        
+                        Notícies
+                    </a>
+                </li>
+                <li class="nav-item d-flex justify-content-center align-items-center mx-4 mb-lg-0 mb-3">
+                    <select class="form-control text-dark text-uppercase" id="changeLang">
+                        <option selected>ca</option>
+                        
+                        <option class="language" value="https://trebehome.github.io/trebe3/es/servicios/s%C3%ADntesis/">es</option>
+                        
+                        <option class="language" value="https://trebehome.github.io/trebe3/eu/zerbitzuak/sintesia/">eu</option>
+                        
+                        <option class="language" value="https://trebehome.github.io/trebe3/en/services/synthesis/">en</option>
+                        
+                        <option class="language" value="https://trebehome.github.io/trebe3/gl/servizos/s%C3%ADntese/">gl</option>
+                        
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><div class="container-fluid p-0">
+<section class="px-lg-5 px-3">
+    <div class="row home align-content-center pt-4">
+        <div class="row m-0 px-lg-5 px-md-3 my-5 py-5">
+            <div class="col-lg-6">
+                <div class="p-2 col-lg-10 col-md-8 col-10 mx-auto mb-5">
+                    <img src="../img/services/synthesis/synthesis.svg" width="100%" height="100%" alt="Synthesis">
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex">
+                <div class="align-self-center">
+                    <div class="fs-1 mt-1">
+                        
+                        Síntesi i clonació de veu
+                    </div>
+                    <div class="mt-4 text-justify poppins-regular">
+                        
+                        La nostra tecnologia de clonació de veu és independent de l&#39;idioma i del gènere, i es pot personalitzar ràpidament i fàcilment per a una veu específica o familiar.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="p-lg-5 p-md-5 py-5 px-3 bg-light">
+    <div class="row m-0 px-lg-5 px-md-3">
+        <div class="d-flex justify-content-lg-start justify-content-center">
+            <div class="align-self-center">
+                <div class="h1 mt-4 text-lg-start text-center">
+                    
+                    Sintetitzem i clonem
+                </div>
+            </div>
+        </div>
+        <div class="row my-lg-5 my-4 pt-3">
+            <div class="col-lg-4 col-md-6 px-lg-5 px-3 my-lg-4 my-5">
+                <div class="mx-auto text-center">
+                    <img loading="lazy" src="../img/services/synthesis/text.svg" width="200" height="200" alt="Text">
+                </div>
+                <div class="mt-4">
+                    <div class="text-center fs-3">
+                        
+                        De text a veu
+                    </div>
+                    <div class="mt-3 text-center poppins-regular">
+                        
+                        Facilítanos el text i et retornem un àudio generat a partir dels nostres models de veus realistes per a diferents idiomes, gèneres i característiques.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-lg-5 px-3 my-lg-4 my-5">
+                <div class="mx-auto text-center">
+                    <img loading="lazy" src="../img/services/synthesis/document.svg" width="200" height="200"
+                        alt="Document">
+                </div>
+                <div class="mt-4">
+                    <div class="text-center fs-3">
+                        
+                        De document a veu
+                    </div>
+                    <div class="mt-3 text-center poppins-regular">
+                        
+                        També generem veus a partir d&#39;arxius de text. Només hauràs de pujar - Lo i seleccionar les característiques que tindrà la veu.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-lg-5 px-3 my-lg-4 my-5 mx-lg-0 mx-auto">
+                <div class="mx-auto text-center">
+                    <img loading="lazy" src="../img/services/synthesis/clone.svg" width="200" height="200" alt="Clone">
+                </div>
+                <div class="mt-4">
+                    <div class="text-center fs-3">
+                        
+                        Generació de Veus Sintètiques
+                    </div>
+                    <div class="mt-3 text-center poppins-regular">
+                        
+                        Actualment comptem amb tecnologia pròpia capaç de generar veus clonades i estem treballant per poder oferir tecnologia de transformació de veu i conversió.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mt-5 p-lg-5 p-md-5 py-4 px-3">
+    <div class="row m-0 px-lg-5 px-md-3">
+        <div class="col-lg-6 d-flex">
+            <div class="align-self-center">
+                <div class="h1">
+                    
+                    Per què Trebe?
+                </div>
+                <div class="mt-4 text-justify poppins-regular">
+                   
+                    Comptem amb tecnologia pròpia basada en els últims paradigmes de la Intel·ligència Artificial suportats en xarxes neuronals.
+                </div>
+                <div class="mt-4 text-justify poppins-regular">
+                    
+                    Això permet que els nostres models siguin:
+                </div>
+            </div>
+        </div>
+        <div class="row my-lg-5 my-4 pt-3 mx-auto">
+            <div class="col-lg-4 col-md-6 px-lg-5 px-3 my-lg-4 my-5">
+                <div class="mx-auto text-center">
+                    <img loading="lazy" src="../img/home/adapted.svg" width="200" height="200" alt="Adapted">
+                </div>
+                <div class="mt-4">
+                    <div class="text-center fs-3">
+                        
+                        Enriquits
+                    </div>
+                    <div class="mt-3 text-justify poppins-regular">
+                        
+                        S&#39;adapta a les teves necessitats, com poden ser l&#39;àmbit d&#39;aplicació o el domini.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-lg-5 px-3 my-lg-4 my-5">
+                <div class="mx-auto text-center">
+                    <img loading="lazy" src="../img/home/agile.svg" width="200" height="200" alt="Agile">
+                </div>
+                <div class="mt-4">
+                    <div class="text-center fs-3">
+                        
+                        Àgils
+                    </div>
+                    <div class="mt-3 text-justify poppins-regular">
+                        
+                        Totes les nostres solucions es basen en contenidors, que faciliten el seu desplegament i gestió.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-lg-5 px-3 my-lg-4 my-5 mx-auto">
+                <div class="mx-auto text-center">
+                    <img loading="lazy" src="../img/home/flexible.svg" width="200" height="200" alt="Flexible">
+                </div>
+                <div class="mt-4">
+                    <div class="text-center fs-3">
+                        
+                        Flexibles
+                    </div>
+                    <div class="mt-3 text-justify poppins-regular">
+                        
+                        La tecnologia està accessible a través d&#39;APIs tant com servei en el núvol com a través de desplegaments on-premise a casa del client.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bg-light pt-1">
+    <form class="container text-center mt-lg-5 mt-md-5 mt-4 py-5" action="https://api.staticforms.xyz/submit" method="post">
+    <div class="fs-2">
+        
+        Vols provar la nostra tecnologia?
+        <div class="poppins-light">
+            
+            Escriu - Nos!
+        </div>
+    </div>
+    <div class="mt-5 col-lg-8 col-md-10 mx-auto px-lg-0 px-3">
+        <div class="my-3">
+            <input type="text" maxlength="128" class="form-control poppins-light py-2" name="$email" placeholder="Email"
+                required>
+        </div>
+        <div class="my-3">
+            <textarea type="text" maxlength="8192" class="form-control poppins-light py-2" name="$message"
+                placeholder="Escribe aqui tu mensaje" rows="10" required></textarea>
+        </div>
+    </div>
+
+    <input class="d-none" type="text" name="honeypot">
+    <input type="hidden" name="accessKey" value="b69ea341-099e-4479-bddb-ea7d2822ddbd">
+    <input type="hidden" name="subject" value="Web form">
+    <input type="hidden" name="replyTo" value="@">
+    <input type="hidden" name="redirectTo" value="https://trebe.org/">
+
+    <div class="text-start mb-5 text-center">
+        <button type="submit" class="btn text-white rounded-pill px-5 py-3" id="send">Enviar</button>
+    </div>
+</form>
+</div>
+
+    </div><footer class="py-4 my-4">
+    <div class="row justify-content-center m-0">
+        <div class="col-lg-5 col-12 text-center mb-lg-0 mb-1">
+            <img loading="lazy" src="../img/footer_logo.svg" width="143" height="106" alt="Logo">
+        </div>
+        <div class="col-lg-7 col-12 d-flex justify-content-evenly flex-wrap align-content-center mt-lg-0 mt-4">
+            <div class="text-center mt-lg-0 mt-md-0 mt-4 mb-lg-0 mb-md-0 mb-3 ps-lg-5">
+                <div class="mb-1">
+                    
+                    Estem en
+
+                </div>
+                <div class="mt-1 poppins-light">
+                    
+                    Passeig Mikeletegi 71, 3r
+                    <br>
+
+                    Vicomtech Innovation Hub
+                    <br>
+                    Donostia, 20009
+                </div>
+            </div>
+            <div class="d-lg-none d-md-none w-100"></div>
+            <div class="text-center mt-lg-0 mt-md-0 mt-4 mb-lg-0 mb-4">
+                <div class="mb-1">
+                    
+                    Contacte
+                </div>
+                <div class="mt-1 poppins-light">
+                    <a href="mailto:xkortazar@trebe.org" class="text-decoration-none poppins-light" id="contact-email">
+                        
+                        info@trebe.org
+                    </a>
+                    <br>
+                    <span class="poppins-light">
+                        
+                        +(34) 943 768 296
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+
+<script src="https://trebehome.github.io/trebe3/js/main.min.js"></script></body>
+
+</html>

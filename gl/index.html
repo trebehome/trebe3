@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="gl"><head>
+	<meta name="generator" content="Hugo 0.113.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TREBE Language Technologies S.L.</title>
+    <meta name="description" content="">
+    
+    <base href="https://trebehome.github.io/trebe3/gl/">
+    
+    <link rel="alternate" hreflang="es" href="https://trebehome.github.io/trebe3/es/">
+    
+    <link rel="alternate" hreflang="eu" href="https://trebehome.github.io/trebe3/eu/">
+    
+    <link rel="alternate" hreflang="en" href="https://trebehome.github.io/trebe3/en/">
+    
+    <link rel="alternate" hreflang="ca" href="https://trebehome.github.io/trebe3/ca/">
+    
+    <link rel="alternate" hreflang="gl" href="https://trebehome.github.io/trebe3/gl/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://trebehome.github.io/trebe3/gl/">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest" crossorigin="anonymous">
+    <meta name="theme-color" content="#031f46">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://trebehome.github.io/trebe3/css/styles.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/trebe_icon.png">
+
+</head><body><nav class="navbar navbar-expand-lg bg-white position-sticky py-lg-2 py-1">
+    <div class="container-fluid">
+        
+        <a href="https://trebehome.github.io/trebe3/gl/" class="navbar-brand ms-lg-4 ms-2 me-lg-5">
+            <img loading="lazy" src="../img/trebe_logo.svg" width="140" height="63" class="img-fluid" alt="Logo">
+        </a>
+        <button class="navbar-toggler me-3" id="menu-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu-options" aria-controls="menu-options" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <div class="position-relative m-0" id="menu-icon">
+                <span class="d-block position-absolute bg-dark opacity-100"></span>
+                <span class="d-block position-absolute bg-dark opacity-100"></span>
+                <span class="d-block position-absolute bg-dark opacity-100"></span>
+                <span class="d-block position-absolute bg-dark opacity-100"></span>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-options">
+            <ul class="navbar-nav ms-auto me-lg-4 text-center align-items-lg-center align-items-start">
+                <li class="nav-item px-lg-2 px-4">
+                    <div class="dropdown text-start">
+                        
+                        <a class="nav-link pe-0 text-decoration-none d-inline-block" id="services"
+                            href="https://trebehome.github.io/trebe3/gl/servizos/">
+                            
+                            Servizos
+                        </a>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split ps-1 border-0" id="menu"
+                            data-bs-toggle="dropdown" aria-label="Services" aria-expanded="false">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end mb-lg-0 mb-2 ps-2 pe-4">
+                            
+                            <li>
+                                <a class="dropdown-item my-2" href="https://trebehome.github.io/trebe3/gl/servizos/traduci%C3%B3n/">
+                                    
+                                    Tradución
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a class="dropdown-item my-2" href="https://trebehome.github.io/trebe3/gl/servizos/transcrici%C3%B3n/">
+                                    
+                                    Transcrición
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a class="dropdown-item my-2" href="https://trebehome.github.io/trebe3/gl/servizos/s%C3%ADntese/">
+                                    
+                                    Síntese de voz
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item px-lg-2 px-4">
+                    <a class="nav-link text-decoration-none d-inline-block" href="https://trebehome.github.io/demo3/gl">
+                        
+                        Demos
+                    </a>
+                </li>
+                <li class="nav-item px-lg-2 px-4">
+                    
+                    <a class="nav-link text-decoration-none d-inline-block" href="https://trebehome.github.io/trebe3/gl/contacto/">
+                        
+                        Contacto
+                    </a>
+                </li>
+                <li class="nav-item px-lg-2 px-4 mb-lg-0 mb-3">
+                    
+                    <a class="nav-link text-decoration-none d-inline-block" href="https://trebehome.github.io/trebe3/gl/novas/">
+                        
+                        Novas
+                    </a>
+                </li>
+                <li class="nav-item d-flex justify-content-center align-items-center mx-4 mb-lg-0 mb-3">
+                    <select class="form-control text-dark text-uppercase" id="changeLang">
+                        <option selected>gl</option>
+                        
+                        <option class="language" value="https://trebehome.github.io/trebe3/es/">es</option>
+                        
+                        <option class="language" value="https://trebehome.github.io/trebe3/eu/">eu</option>
+                        
+                        <option class="language" value="https://trebehome.github.io/trebe3/en/">en</option>
+                        
+                        <option class="language" value="https://trebehome.github.io/trebe3/ca/">ca</option>
+                        
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><div class="container-fluid p-0">
+<section class="row m-0 justify-content-center">
+    <div class="container home col-lg-10 px-lg-0 px-md-5 px-1 row justify-content-center align-content-center">
+        <div class="px-lg-5 col-lg-8 col-md-11"><div style="min-height:150px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="211 0 930 569">
+        <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none;"
+            d="M617.54,309.5H333.04c-64.9,0-118-53.1-118-118h0c0-64.9,53.1-118,118-118H1018.04c64.9,0,118,53.1,118,118h0c0,64.9-53.1,118-118,118h-322.5" />
+        <g id="Capa_14">
+            <circle style="stroke-miterlimit: 10; fill: none; stroke: #041c44;" cx="959.06" cy="191.48" r="34.48" />
+            <path style="stroke-miterlimit: 10; fill: none; stroke-width: .63px; stroke: #041c44;"
+                d="M971.06,188.56c0-4.17-3.18-7.57-7.1-7.57s-7.1,3.39-7.1,7.57c0,2.12-1.52,3.86-3.39,3.86s-3.39-1.73-3.39-3.86c0-4.17-3.19-7.57-7.1-7.57v3.71c1.87,0,3.39,1.73,3.39,3.86,0,4.17,3.19,7.57,7.1,7.57s7.1-3.4,7.1-7.57c0-2.12,1.52-3.86,3.39-3.86s3.39,1.73,3.39,3.86c0,4.17,3.18,7.57,7.1,7.57v-3.71c-1.87,0-3.39-1.73-3.39-3.86Z" />
+            <rect style="stroke-miterlimit: 10; fill: none; stroke-width: .63px; stroke: #041c44;" x="942.03" y="198.15"
+                width="33.37" height="4.11" />
+        </g>
+        <g>
+            <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                d="M613.12,218.1c-3.11-1.65-7.66-2.21-14.2,.35,0,0-2.46-12.43-19.79-13.5s-20.99,13.28-20.99,13.28c0,0-.09-5.56-8.06-5.35-7.96,.21-9.13,6.64-9.13,6.64-2.42-1.43-4.94-2.07-7.26-1.99-6.09,.21-5.78,8.64,.31,8.64h76.74c4.83,0,6.55-5.85,2.38-8.06Z" />
+            <g>
+                <path style="fill: #00eefd;"
+                    d="M645.37,436.96s-.96-28.8-18.53-24.63c-9.44,2.24-7.34,9.6-7.34,9.6,0,0-7.34-26.23-20.97-21.11s17.83,54.38,17.83,54.38l29.01-18.23Z" />
+                <path style="fill: #ff8c36;"
+                    d="M682.95,433.44s-6.29-50.86-45.62-44.62c-39.33,6.24,17.3,59.02,17.3,59.02l28.31-14.39Z" />
+                <path style="fill: #00eefd;"
+                    d="M760.02,439.68s20.04-31.83,8.51-46.22c-11.54-14.39-31.05-1.28-31.05-1.28,0,0,6.06-25.54-26.51-23.88-32.17,1.63-10.72,27.24-10.72,27.24,0,0-17.07-7.84-30.29,1.12-13.22,8.96,9.79,45.42,9.79,45.42l80.28-2.4Z" />
+                <path style="opacity: .2;"
+                    d="M706.54,430.1s.09-.01,.12-.04c.08-.06,.09-.17,.02-.25l-23.42-25.59c-.07-.07-.19-.09-.27-.02-.08,.06-.09,.17-.02,.25l23.42,25.59s.09,.06,.15,.06Z" />
+                <path style="fill: #ff8c36;"
+                    d="M789.85,487.18s-20.39-81.26,32.57-66.54c52.96,14.72-14.16,66.54-14.16,66.54h-18.41Z" />
+                <path style="opacity: .2;"
+                    d="M795.68,458.89c.09,0,.16-.05,.19-.13,.05-.16,4.78-15.96,26.78-21.31,.1-.02,.16-.12,.14-.22-.03-.09-.13-.15-.24-.13-11.61,2.82-18.34,8.53-21.95,12.82-3.91,4.65-5.09,8.7-5.1,8.74-.03,.09,.04,.19,.14,.22,.02,0,.03,0,.05,0Z" />
+                <path style="fill: #00eefd;"
+                    d="M780.05,459.85s56.19-53.78,23.75-70.31c-32.44-16.53-30.73,67.01-30.73,67.01l6.98,3.29Z" />
+                <path style="opacity: .2;"
+                    d="M776.1,443.21s.08-.01,.11-.03c.11-.07,11.37-7.48,22.1-42.32,.03-.09-.03-.19-.13-.22-.1-.02-.21,.03-.24,.12-5.58,18.12-11.25,28.61-15.03,34.22-4.09,6.08-6.89,7.89-6.92,7.91-.09,.06-.11,.17-.05,.25,.04,.05,.1,.08,.16,.08Z" />
+                <path style="fill: #ff8c36;"
+                    d="M740.22,411.48s9.09-18.87,30.99-10.98c21.91,7.89,17.01,37.21,0,44.04l-30.99-33.05Z" />
+                <path style="fill: #00eefd;"
+                    d="M582.27,487.18s13.63-74.12-27.27-71.22c-40.9,2.9,10.49,71.22,10.49,71.22h16.78Z" />
+                <path style="opacity: .2;"
+                    d="M578.6,478.08s.08-.01,.12-.04c.08-.06,.1-.17,.04-.25-.13-.15-13.01-15.73-21.99-49.83-.03-.09-.13-.15-.23-.13-.1,.02-.17,.12-.14,.21,4.7,17.86,10.44,30.49,14.43,37.94,4.33,8.08,7.59,11.99,7.62,12.03,.04,.05,.1,.07,.15,.07Z" />
+                <path style="fill: #ff8c36;"
+                    d="M579.65,471.83s-17.83-12.48-11.19-31.03c6.64-18.55,26.22-25.27,43.69-15.99,17.48,9.28,4.54,34.55,4.54,34.55l-37.05,12.48Z" />
+                <path style="opacity: .2;"
+                    d="M603.42,460.17s.05,0,.07-.01c.1-.04,.15-.14,.1-.23l-12.93-28.47c-.04-.09-.15-.13-.25-.09-.1,.04-.15,.14-.1,.23l12.93,28.47c.03,.07,.1,.11,.18,.11Z" />
+            </g>
+            <g>
+                <path style="stroke-miterlimit: 10; fill: none; stroke-width: 1.04px; stroke: #041c44;"
+                    d="M690.29,202.1s-3.2-1.38-5.18-2.18c-2.08-.84-6.84-3.02-8.67-3.07-1.83-.05-11.98,3.51-13.02,3.67-1.04,.16-2.62-.26-2.63,.64-.01,.9,1.02,1.8,3.61,1.22,0,0,.56,.82,2.11,.6,1.55-.21,2.66-.98,4.24-.99s5.77,2.87,7.25,3.06c1.48,.19,2.17,.34,2.17,.34,0,0,1.12,1.2,3.08,1.05,1.96-.15,2.41-.7,2.41-.7,0,0,1.27,.45,3.18,1.75l1.45-5.38Z" />
+                <path style="stroke-miterlimit: 10; fill: none; stroke-width: 1.04px; stroke: #041c44;"
+                    d="M680.17,205.5s.08-.02,.1-.05c.04-.05,.03-.12-.02-.16-.71-.5-1.53-2.4-1.54-2.42-.01-.03-.04-.06-.08-.07-.04,0-.08,0-.11,.02-.01,0-1.11,.68-3.16,.67-.97-.01-1.65-.24-1.91-.66-.16-.25-.15-.57,.02-.84,.36-.58,3.31-1.9,4.29-2,.94-.1,5.51,1.06,5.56,1.07,.07,.02,.14-.02,.15-.08,.02-.06-.02-.12-.09-.14-.19-.05-4.66-1.19-5.65-1.08-.99,.11-4.05,1.42-4.48,2.12-.21,.35-.22,.75-.02,1.07,.22,.34,.76,.76,2.12,.77,1.74,.03,2.81-.45,3.17-.63,.2,.45,.9,1.93,1.56,2.4,.02,.02,.05,.02,.08,.02Z" />
+                <path style="stroke-miterlimit: 10; fill: none; stroke-width: 1.04px; stroke: #041c44;"
+                    d="M664.26,202.5c.08,0,.14,0,.15,0,.07,0,.12-.06,.11-.12,0-.06-.07-.11-.14-.1,0,0-.87,.06-1.1-.36-.11-.19-.13-.31-.09-.4,.07-.16,.39-.3,1.04-.47,.67-.18,2.93-.82,4.74-1.34,1.29-.37,2.5-.72,2.61-.74,.07-.01,.11-.08,.09-.14-.02-.06-.08-.1-.15-.08-.11,.02-1.07,.3-2.62,.75-1.81,.52-4.06,1.17-4.73,1.34-.75,.2-1.09,.36-1.2,.6-.1,.2,0,.41,.1,.59,.24,.43,.9,.48,1.2,.48Z" />
+                <path style="stroke-miterlimit: 10; fill: none; stroke-width: 1.04px; stroke: #041c44;"
+                    d="M665.02,202.85s.02,0,.03,0c.05-.01,4.77-1.05,6.78-1.54,.07-.02,.11-.08,.09-.14-.02-.06-.09-.1-.15-.08-2,.49-6.73,1.53-6.77,1.54-.07,.01-.11,.08-.09,.14,.01,.05,.07,.09,.12,.09Z" />
+            </g>
+            <g>
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M663.28,232.92s.07-4.2,2.07-5.47c1.13-.72,3.36-1.17,3.95-2.05,1.01-1.48,.34-5.38,.34-5.38,0,0,1.22-.56,1.3-1.62,.08-1.06-1.68-4.23-1.98-5.46-.11-.43-.02-1.98-.23-3.3-.39-2.44-1.15-5.62-3.45-7.79-2.81-2.66-5.68-2.92-11.51-2.18-5.83,.74-7.09,3.3-8.31,8.09-1.22,4.79,1.21,10.41,2.44,12.83,1.23,2.43,1.09,9.46,1.1,12.44l7.39,1.89,6.9-2Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M667.18,200.21c-.76-1.08-1.18-2.34-2.66-2.72-1.59-.41-3.98-.03-5.51,.43-.74,.22-1.46,.52-2.23,.63-2.3,.33-4.79-1.06-6.9-.16-1.22,.52-2.02,1.72-3.29,2.11-.52,.16-1.09,.17-1.6,.37-1.54,.6-1.76,2.49-1.7,4.02,.17,4.95,1.09,10.13,2.2,14.99,.41,1.81,1.04,3.06,1.85,4.67,.66,1.31,.4,3.9,2.85,3.48,2.79-.47,5.98-.26,7.08-.54,2.25-.57,3.31-4.5,4.46-8.97,.14-.56-2.29-5.02-2.29-5.02,0,0,.53,1.37,1.94,2.3,1.41,.92,4.31-.12,4.57-.79,.25-.66-3.1-5.39-2.31-7.22,.7-1.63,2.31-1.79,3.64-2.9,1.29-1.08,.93-3.23-.09-4.69Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M659.41,217.52c.82,1.85,2.45,2.98,3.66,2.54,1.2-.45,1.51-2.3,.7-4.15-.82-1.85-1.85-3.17-3.05-2.72-1.2,.45-2.12,2.49-1.3,4.33Z" />
+            </g>
+            <g>
+                <path style="stroke-miterlimit: 10; fill: none; stroke-width: 1.04px; stroke: #041c44;"
+                    d="M627.46,322.4c-.15,1.06-.45,2.17,.3,3.08,.75,.91,3.02,2.83,3.26,4,.24,1.17,.11,2.05,.25,2.63,.14,.58,.57,2.78,.57,2.78,0,0-.43,.63-.99,.37-.56-.26-1.46-.81-1.64-3.48,0,0-1-.16-1.1,1.01-.1,1.17-.09,2.2,.02,2.54s1.88,2.72,1.76,3.29c-.12,.57-.31,.61-.31,.61,0,0,.21,.77-.47,.81-.68,.04-2.14-1.2-2.79-1.54-.65-.34-3.37-1.74-3.54-2.12-.17-.38-.74-3.08-.49-5.87,.25-2.8-.2-4.15-.41-4.9-.21-.75,.03-2.73,.03-2.73l5.55-.47Z" />
+                <path style="stroke-miterlimit: 10; fill: none; stroke-width: 1.04px; stroke: #041c44;"
+                    d="M625.35,337.54c.2,0,.41-.03,.62-.08h.04c.06-.02,.3-.05,.54-.07,.33-.03,.67-.06,.82-.09,.13-.03,.22-.1,.26-.21,.07-.19-.03-.45-.28-.74-.26-.3-.93-.3-1.46-.31-.23,0-.49,0-.56-.04-.27-.13-1.36-.58-1.41-.6-.06-.03-.14,0-.16,.06-.03,.06,0,.13,.06,.15,.01,0,1.13,.47,1.4,.59,.12,.06,.32,.06,.67,.06,.46,0,1.08,.01,1.27,.23,.23,.26,.27,.44,.24,.52,0,.02-.02,.05-.08,.06-.13,.03-.49,.06-.78,.09-.31,.03-.5,.04-.58,.06h-.04c-.22,.07-.89,.24-1.72-.27-.06-.03-.13-.02-.17,.03-.04,.05-.02,.12,.03,.16,.42,.26,.86,.39,1.31,.39Z" />
+                <path style="stroke-miterlimit: 10; fill: none; stroke-width: 1.04px; stroke: #041c44;"
+                    d="M628.88,339.05c.19,0,.42-.07,.61-.36,.16-.24,.18-.65-.62-1.2-.39-.27-2-.43-2.18-.45-.07,0-.13,.04-.14,.1,0,.06,.04,.12,.11,.13,.48,.05,1.78,.21,2.06,.4,.36,.25,.75,.61,.55,.9-.19,.29-.38,.26-.6,.22h-.05c-.18-.04-1.59-.4-2.32-.58-.07-.02-.14,.02-.15,.08-.02,.06,.02,.12,.09,.14,.09,.02,2.1,.54,2.34,.58h.05c.07,.02,.16,.03,.25,.03Z" />
+            </g>
+            <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                d="M634.44,236.58c-2.96,1.28-4.71,2.62-7.6,7.13-3.4,5.31-5.88,17.32-5.45,26.11,.43,8.79,.8,6.93-.57,17.19-.86,6.43,.43,14.17,.29,20.47s-1.29,14.43-1.29,14.43c0,0,9.32,3.67,13.05,2.89,3.73-.79,1.58-88.22,1.58-88.22Z" />
+            <g>
+                <g>
+                    <polygon style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                        points="714.36 393.35 714.46 390.61 723.06 389.89 723.06 392.73 719.83 395.92 714.36 393.35" />
+                    <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                        d="M714.36,393.35c-.48,0-1.25,8.79-.24,9.26,1.01,.48,25.31,.18,25.71,0,.4-.18,.44-3.17-1.49-3.91-1.93-.74-8.1-1.22-10.03-1.81-1.93-.59-3.09-4.18-5.24-4.17-.83,0-2.08,1.12-4.66,1.12s-3.72-.5-4.04-.5Z" />
+                </g>
+                <g>
+                    <polygon style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                        points="642.01 420.02 641.91 411.45 633.69 411.27 633.31 420.64 642.01 420.02" />
+                    <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                        d="M633.31,419.16c-.48,0-1.25,8.79-.24,9.26,1.01,.48,25.31,.18,25.71,0,.4-.18,.44-3.17-1.49-3.91-1.93-.74-8.1-1.22-10.03-1.81-1.93-.59-3.09-4.18-5.24-4.17-.83,0-2.08,1.12-4.66,1.12s-3.72-.5-4.04-.5Z" />
+                </g>
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M725.45,391.42l-13,.35s-2.39-1.66-1.94-7.52c0,0-5.52-32.02-5.66-39.63,0,0-20.41-5.51-40.87-14.17,0,0-9.18,14.7-12.48,31.76-3.3,17.06-4.21,52.58-5.4,53.67s-13.53,1.05-15.1,.66c-1.58-.39-2.01-19.55-1.86-23.49s-.1-25.19,.33-34.51c.43-9.32,.38-19.42-.62-27.29-1-7.87-.72-13.38,.29-18.76l50.62-12.73s2.1,1.4,6.69,5.25c4.59,3.85,29.25,20.65,33.08,27.82s5.93,58.61,5.93,58.61Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px; opacity: .25;"
+                    d="M663.98,330.62c.07,0,.14-.04,.17-.1,.05-.09,.01-.19-.08-.24l-10.04-4.72c-.09-.05-.21-.01-.26,.08-.05,.09-.01,.19,.08,.24l10.04,4.72s.06,.02,.09,.02Z" />
+            </g>
+            <g>
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M685.87,303.68l-3.69,1.43c-.73-.92-1.7-2.37-2.19-4.18l.24,4.59-51.1,6.95,.43-25.06,4.88-50.83s9.56-2.32,11.26-3.04c1.7-.72,3.29-2.78,3.29-2.78,6.49-2.7,14.55,0,14.55,0l13.34,2.32,7.17,23.62c-3.01,4.2-4.3,11.55-4.01,15.88,.29,4.33-1.04,14.98-.48,19.11,1.05,7.7,6.31,11.98,6.31,11.98Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M676.89,233.08c2.68,.35,10.18-4.59,15.34-6.69,5.16-2.1,12.19-5.38,12.19-5.38,0,0-9.94-5.77-19.69-11.9,0,0,2.53-5.69,4.4-9.1,0,0,36.71,14.52,35.94,21.69-.76,7.17-16.33,15.65-22.51,19.64-7.31,4.72-15.06,9.64-18.5,15.35l-7.17-23.62Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M662.01,239.12c5.97,1.27,12.91,4.2,12.19,12.73-.72,8.53-2.87,24.14-2.58,33.07,.29,8.92,4.3,20.73,.29,25.72s-24.81,9.19-32.41,8.4-14.91-3.54-16.35-9.45-4.3-24.67-1.58-35.82c2.72-11.15,4.59-20.34,5.45-24.67,.86-4.33,2.87-8.27,9.75-9.58,6.88-1.31,19.07-1.71,25.24-.39Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M672.8,232.09c-.1,1.31-2.44,5.18-2.34,10.78l-6.69-1.92s1.72-8.84,2.58-9.71c.86-.87,6.55-.46,6.45,.85Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M641.4,239.9l1.22-5.77s-3.15,.66-4.16,1.18c-1,.52-5.38,6.82-5.38,6.82l8.32-2.23Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px; opacity: .25;"
+                    d="M629.28,258.63c.11,0,.19-.08,.19-.18,0-4.19-2.29-9.29-2.31-9.34-.04-.09-.15-.13-.25-.1-.1,.04-.15,.14-.1,.23,.02,.05,2.28,5.09,2.28,9.21,0,.1,.09,.18,.19,.18Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M673.25,298.26s5.95-3.98,6.31-6.57c.26-1.87,1.77,3.68,1.66,4.85-.12,1.17-5.24,7.36-7.92,8.21-2.68,.85-.05-6.49-.05-6.49Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M623.15,309.58c-.8-3.28-2.03-10.51-2.51-18.21,5.5-1.21,12.72-2.13,22.11-2.48,15.67-.59,27.16,6.91,30.5,9.37,.65,5.08,.8,9.7-1.35,12.37-4.01,4.99-24.81,9.19-32.41,8.4-7.6-.79-14.91-3.54-16.35-9.45Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M662.07,238.94s-2.68-5.34-7.07-4.9c-4.4,.44-6.98,2.97-7.65,5.42l4.68,.09s-.29-3.06,2.29-3.06,4.68,2.71,4.68,2.71l3.06-.26Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                    d="M627.03,249.09c.86-4.33,2.87-8.27,9.75-9.58,6.88-1.31,19.07-1.71,25.24-.39,5.97,1.27,12.91,4.2,12.19,12.73-.28,3.32-.77,7.7-1.26,12.35-4.45-2.81-14.46-7.59-30.38-6.97-7.11,.28-13,1.25-17.73,2.44,1-4.6,1.74-8.28,2.2-10.57Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px; opacity: .25;"
+                    d="M658.3,290.63h.01c.11,0,.19-.09,.18-.19-.42-5.32-.41-11.26,.04-17.64,1.14-16.31,1.2-27.97-8.38-29.4-9.21-1.38-13.96,.26-17.51,6.04-3.43,5.59-6.78,24.94-7.37,29.63-.23,1.81-.16,5.59,.21,11.24,0,.1,.1,.18,.2,.17,.11,0,.19-.09,.18-.19-.36-5.63-.43-9.39-.21-11.18,.59-4.68,3.92-23.96,7.33-29.5,3.5-5.69,7.98-7.23,17.11-5.86,9.26,1.38,9.18,12.91,8.06,29.03-.45,6.4-.46,12.35-.04,17.68,0,.09,.09,.16,.19,.16Z" />
+                <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px; opacity: .25;"
+                    d="M704.42,221.18s.07,0,.11-.03c.05-.03,4.6-2.73,9.5-2.73,.11,0,.19-.08,.19-.18s-.09-.18-.19-.18c-5.02,0-9.67,2.76-9.71,2.78-.09,.05-.11,.16-.06,.24,.04,.05,.1,.08,.16,.08Z" />
+            </g>
+            <g>
+                <polygon style="fill: #dbd9d6;"
+                    points="714.65 402.88 727.08 402.88 730.42 406.29 733.86 402.88 742.66 402.96 756.61 415.56 759.67 414.51 774.78 421.69 777.84 428.68 786.24 453.11 817.18 461.27 820.32 477.11 822.42 487.18 565.5 487.18 574.41 464.68 615.19 448.69 630.35 429.81 642.01 428.68 649.22 436.75 649.22 428.65 684.77 428.68 691.51 426.23 691.51 423.08 703.27 406.29 709.29 408.13 714.65 402.88 714.65 402.88" />
+                <g style="opacity: .2;">
+                    <path
+                        d="M760.37,444.39c.07,0,.14-.04,.17-.1l9.62-18.41s.02-.08,.01-.12l-1.86-7.27c-.02-.09-.13-.15-.23-.13-.1,.02-.17,.12-.14,.21l1.84,7.2-9.59,18.36c-.05,.09,0,.19,.09,.24,.03,.01,.06,.02,.08,.02Z" />
+                    <path
+                        d="M749.64,418.71s.05,0,.08-.02l6.98-2.97c.1-.04,.14-.15,.09-.23-.04-.09-.16-.13-.26-.09l-6.98,2.97c-.1,.04-.14,.15-.09,.23,.03,.06,.1,.1,.18,.1Z" />
+                    <path
+                        d="M732.91,428.42s.03,0,.04,0c.1-.02,.17-.12,.15-.21l-2.47-10.17,3.02-4.58s.04-.11,.01-.16l-3.06-7.09c-.04-.09-.15-.14-.25-.1-.1,.04-.15,.14-.11,.23l3.02,7-3.01,4.56s-.03,.09-.02,.13l2.49,10.24c.02,.08,.1,.14,.19,.14Z" />
+                    <path
+                        d="M703.56,414.16c.05,0,.11-.02,.14-.06l5.74-5.86c.07-.07,.06-.18-.02-.25-.08-.06-.2-.06-.27,.01l-5.74,5.86c-.07,.07-.06,.18,.02,.25,.04,.03,.08,.05,.13,.05Z" />
+                    <path
+                        d="M691.51,433.94c.11,0,.19-.08,.19-.18v-7.53c0-.1-.08-.18-.19-.18s-.19,.08-.19,.18v7.53c0,.1,.08,.18,.19,.18Z" />
+                    <path
+                        d="M793.47,468.7s.05,0,.08-.01c.1-.04,.14-.14,.1-.23l-7.22-15.41c-.04-.09-.16-.13-.25-.09-.1,.04-.14,.14-.1,.23l7.22,15.41c.03,.07,.1,.11,.18,.11Z" />
+                    <path
+                        d="M629.99,459.53c.06,0,.11-.02,.15-.07,.07-.08,.05-.19-.03-.25l-14.8-10.66c-.08-.06-.21-.05-.27,.03-.07,.08-.05,.19,.03,.25l14.8,10.66s.08,.04,.12,.04Z" />
+                </g>
+                <polygon style="opacity: .1;"
+                    points="565.5 487.18 574.41 464.68 636.32 467.79 653.06 479.98 653.06 468.63 693.96 466.55 701.82 446.88 756.88 466.39 756.53 456.15 766.67 474.07 820.32 477.11 822.42 487.18 565.5 487.18" />
+            </g>
+            <path style="stroke-miterlimit: 10; stroke: #0d2142; fill: none; stroke-width: 1.04px;"
+                d="M803.98,298.5h-58.45c-8.77,0-12.42-10.39-5.21-14.96,.77-.49,1.62-.92,2.55-1.27,9.08-3.48,17.74,2.56,17.74,2.56,0,0,.23-16.23,16.1-17.08,15.87-.85,18.9,15.38,18.9,15.38,0,0,4.03-1.33,9-1.08,11.56,.6,10.94,16.45-.64,16.45Z" />
+        </g>
+        <line style="fill: #041c44; stroke-miterlimit: 10; stroke: #0d2142; stroke-width: .67px;" x1="388.04" y1="277"
+            x2="388.04" y2="356" /><text style="fill: #041c44; font-size: 15px; font-family: Poppins-Light, Poppins;"
+            transform="translate(281.96 381.14)">
+            <tspan x="0" y="0">            Solucións tecnolóxicas para            </tspan>
+            <tspan x="29.36" y="16.8">              Idiomas maioritarios  </tspan>
+        </text>
+        <line style="stroke-miterlimit: 10; stroke: #0d2142; fill: none;" x1="959.04" y1="209.5" x2="959.04" y2="361" />
+        <text style="fill: #041c44; font-size: 15px;" transform="translate(856.46 381.14)">
+            <tspan>
+                <tspan x="0" y="0">        Solucións tecnolóxicas para   </tspan>
+            </tspan>
+            <tspan x="17.05" y="16.8">           Linguas non maioritarios  </tspan>
+        </text>
+    </svg>
+</div></div>
+        <div class="row justify-content-between mt-4 text-lg-start text-center">
+            <div class="col-lg-6 pe-lg-5 display-5">
+                
+                Miramos onde ninguén estaba mirando.
+
+            </div>
+            <div class="col-lg-6 pt-3 ps-lg-5 mt-lg-0 mt-4 text-justify poppins-regular">
+              
+                Trebe é a primeira plataforma que traduce, transcribe, subtitula, sintetiza e clona voz de xeito automático para todos os idiomas cooficiais (Castelán, Catalán, Galego e Éuscaro).
+                
+            
+
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="bg-light p-lg-5 p-md-5 py-5 px-3">
+    <div class="row m-0 px-lg-5 px-md-3">
+        <div class="col-lg-6 d-flex pe-lg-5">
+            <div class="align-self-center">
+                <div class="h1 mt-lg-0 mt-4">
+                    
+                    A organización
+
+                </div>
+                <div class="mt-4 text-justify poppins-regular">
+                    
+                        Somos unha spinout de Vicomtech, un Centro Tecnolóxico especializado en investigación aplicada de Intelixencia Artificial a diversos Ámbitos como o das Tecnoloxías da Linguaxe.
+                </div>
+                <div class="mt-4 text-justify poppins-regular">
+                    
+                    Esta colaboración permítenos manternos sempre á vangarda tecnolóxica e poder ofrecer solucións non desenvolvidas ata o momento.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-8 mx-lg-0 mx-auto mt-4 ps-lg-5">
+            <div class="p-2">
+                <img loading="lazy" src="../img/home/organization.svg" width="100%" height="100%" alt="Organization">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mt-5 p-lg-5 p-md-5 py-4 px-3">
+    <div class="row m-0 px-lg-5 px-md-3">
+        <div class="col-lg-6 d-flex">
+            <div class="align-self-center">
+                <div class="h1">
+                    
+                    A tecnoloxía
+                </div>
+                <div class="mt-4 text-justify poppins-regular">
+                    
+                    Contamos con tecnoloxía propia baseada nos últimos paradigmas da Intelixencia Artificial soportados en redes neuronais.:
+                </div>
+                <div class="mt-4 text-justify poppins-regular">
+                    
+                    Isto permite que a nosa plataforma sexa:
+                </div>
+            </div>
+        </div>
+        <div class="row my-lg-5 my-4 pt-3 mx-auto">
+            <div class="col-lg-4 col-md-6 px-lg-5 px-3 my-lg-4 my-5">
+                <div class="mx-auto text-center">
+                    <img loading="lazy" src="../img/home/adapted.svg" width="200" height="200" alt="Adapted">
+                </div>
+                <div class="mt-4">
+                    <div class="text-center fs-3">
+                        
+                        Adaptada
+                    </div>
+                    <div class="mt-3 text-justify poppins-regular">
+                        
+                        Adáptase ás túas necesidades, como poden ser o ámbito de aplicación ou o dominio.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-lg-5 px-3 my-lg-4 my-5">
+                <div class="mx-auto text-center">
+                    <img loading="lazy" src="../img/home/agile.svg" width="200" height="200" alt="Agile">
+                </div>
+                <div class="mt-4">
+                    <div class="text-center fs-3">
+                        
+                        Áxil
+                    </div>
+                    <div class="mt-3 text-justify poppins-regular">
+                        
+                        Todas as nosas solucións baséanse en contedores, que facilitan o seu despregamento e xestión.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 px-lg-5 px-3 my-lg-4 my-5 mx-auto">
+                <div class="mx-auto text-center">
+                    <img loading="lazy" src="../img/home/flexible.svg" width="200" height="200" alt="Flexible">
+                </div>
+                <div class="mt-4">
+                    <div class="text-center fs-3">
+                        
+                        Flexíbel
+                    </div>
+                    <div class="mt-3 text-justify poppins-regular">
+                       
+                        A tecnoloxía está accesible a través de APIs tanto como servizo na nube como a través de despregamentos on-premise en casa do cliente
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light p-lg-5 p-md-5 py-5 px-3">
+    <div class="row m-0 px-lg-5 px-md-3">
+        <div class="col-lg-6 pe-5">
+            <div class="p-2 col-lg-10 col-8 mx-auto mb-5">
+                <img loading="lazy" src="../img/home/team.svg" width="100%" height="100%" alt="Team">
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex ps-lg-5">
+            <div class="align-self-center">
+                <div class="h1">
+                    
+                    Únete ao equipo
+                </div>
+                <div class="mt-4 text-justify poppins-regular">
+                    
+                    Buscamos xente dinámica con ganas de traballar nas tecnoloxías máis actuais (JAMStack), con coñecemento de despregamentos cloud, integración continua, automatización, API gateways «se o teu son Docker, Kubernetes, Datadog, OpenSearch, Git, Jenkins, Kong, KrakenD, Hugo, Netlify, Postman, Newman!
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div><footer class="py-4 my-4">
+    <div class="row justify-content-center m-0">
+        <div class="col-lg-5 col-12 text-center mb-lg-0 mb-1">
+            <img loading="lazy" src="../img/footer_logo.svg" width="143" height="106" alt="Logo">
+        </div>
+        <div class="col-lg-7 col-12 d-flex justify-content-evenly flex-wrap align-content-center mt-lg-0 mt-4">
+            <div class="text-center mt-lg-0 mt-md-0 mt-4 mb-lg-0 mb-md-0 mb-3 ps-lg-5">
+                <div class="mb-1">
+                    
+                    Estamos en
+
+                </div>
+                <div class="mt-1 poppins-light">
+                    
+                    Paseo Mikeletegi 71, 3º
+                    <br>
+
+                    Vicomtech Innovation Hub
+                    <br>
+                    Donostia, 20009
+                </div>
+            </div>
+            <div class="d-lg-none d-md-none w-100"></div>
+            <div class="text-center mt-lg-0 mt-md-0 mt-4 mb-lg-0 mb-4">
+                <div class="mb-1">
+                    
+                    Contacto
+                </div>
+                <div class="mt-1 poppins-light">
+                    <a href="mailto:xkortazar@trebe.org" class="text-decoration-none poppins-light" id="contact-email">
+                        
+                        info@trebe.org
+                    </a>
+                    <br>
+                    <span class="poppins-light">
+                        
+                        +(34) 943 768 296
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+
+<script src="https://trebehome.github.io/trebe3/js/main.min.js"></script></body>
+
+</html>
